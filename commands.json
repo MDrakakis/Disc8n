@@ -1,0 +1,10 @@
+{
+  "ping": {
+    "webhook": "/webhook/ping",
+    "description": "Ping the webhook to check if it's alive.",
+    "requiresConfirmation": false,
+    "examples": [
+      "!ping"
+    ]
+  }
+}
