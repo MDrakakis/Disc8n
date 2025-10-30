@@ -1,0 +1,21 @@
+services:
+  disc8n:
+    build: .
+    container_name: disc8n
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN}
+      DISCORD_CLIENT_ID: ${DISCORD_CLIENT_ID}
+      COMMAND_PREFIX: ${COMMAND_PREFIX}
+      ALLOWED_USERS: ${ALLOWED_USERS}
+      ALLOWED_ROLES: ${ALLOWED_ROLES}
+      ALLOWED_CHANNELS: ${ALLOWED_CHANNELS}
+      ENABLE_SLASH_COMMANDS: ${ENABLE_SLASH_COMMANDS}
+      LOG_LEVEL: ${LOG_LEVEL}
+      N8N_BASE_URL: ${N8N_BASE_URL}
+      N8N_AUTH_HEADER: ${N8N_AUTH_HEADER}
+      N8N_TIMEOUT: ${N8N_TIMEOUT}
+    volumes:
+      - ./commands.json:/app/commands.json
+      - ./logs:/app/logs
