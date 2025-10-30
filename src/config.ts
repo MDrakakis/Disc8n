@@ -47,7 +47,7 @@ function parseIntEnv(name: string, defaultValue: number): number {
 export const config: AppConfig = {
   discord: {
     token: getEnvVar("DISCORD_TOKEN", true),
-    clientId: getEnvVar("DISCORD_CLIENT_ID", true),
+    clientId: getEnvVar("DISCORD_CLIENT_ID", false),
   },
   n8n: {
     baseUrl: getEnvVar("N8N_BASE_URL", true),
