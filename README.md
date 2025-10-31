@@ -1,18 +1,14 @@
-# Disc8n bot
+# Disc8n bot ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Node](https://img.shields.io/badge/node-%3E%3D18.0.-brightgreen.svg) ![Discord.js](https://img.shields.io/badge/discord.js-v14-blue.svg)
 
 <div align="center">
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
-![Discord.js](https://img.shields.io/badge/discord.js-v14-blue.svg)
+If you’ve used n8n (or any automation platform), you know how powerful it is for connecting apps, APIs, and services but triggering those flows from Discord often means dealing with messy webhooks or custom scripts.
 
-A secure, self-hosted bridge between Discord and n8n workflows. Trigger your n8n automations directly from Discord with proper authentication, rate limiting, and logging.
+Disc8n is a secure, self-hosted bridge between Discord and n8n. Trigger your automations directly from Discord commands, with built-in authentication, rate limiting, and detailed logging.
 
 [Features](#features) • [Quick Start](#quick-start) • [Configuration](#configuration) • [Security](#security) • [Contributing](#contributing)
 
 </div>
-
----
 
 ## Features
 
@@ -26,16 +22,12 @@ A secure, self-hosted bridge between Discord and n8n workflows. Trigger your n8n
 - 🔧 **Easy Configuration** - Environment variable based setup
 - 📦 **Extensible** - Simple command addition via JSON
 
----
-
 ## 🔧 Prerequisites
 
 - **Node.js** 18.0.0 or higher
 - **Discord Bot Token** (from Discord Developer Portal)
 - **n8n** instance (self-hosted or local)
 - **Docker** (optional, for containerized deployment)
-
----
 
 ## Quick Start
 
@@ -163,8 +155,6 @@ Edit commands.json to add or modify commands:
 - `requiresConfirmation` - Display warning badge (not implemented yet)
 - `examples` - Example usage shown in help
 
----
-
 ## Usage
 
 ### Built-in Commands
@@ -251,8 +241,6 @@ The bot supports three levels of authorization:
 1. Enable Developer Mode in Discord (Settings → Advanced → Developer Mode)
 2. Right-click user/role/channel → Copy ID
 
----
-
 ## Deployment
 
 ### Docker Compose (Recommended)
@@ -289,13 +277,9 @@ Contributions are welcome! Here's how you can help:
 
 Guidelines: Follow existing code style, comment complex logic, update docs, test thoroughly
 
----
-
 ## License
 
 MIT License - see [LICENSE](LICENSE).
-
----
 
 ## Acknowledgments
 
@@ -303,13 +287,9 @@ MIT License - see [LICENSE](LICENSE).
 - [n8n](https://n8n.io/)
 - Contributors and users of this project
 
----
-
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/MDrakakis/Disc8n/issues)
-
----
 
 <div align="center">
 
