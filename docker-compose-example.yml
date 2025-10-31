@@ -1,6 +1,6 @@
 services:
   disc8n:
-    build: .
+    image: mdrakakis/disc8n
     container_name: disc8n
     restart: unless-stopped
     env_file: .env
